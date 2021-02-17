@@ -74,7 +74,7 @@ def decrypt(private_key, text):
     d, n = private_key
     x = ''
     for [i, code] in text:
-        if(i == '400'):
+        if(i == 400):
             x += ' '
         else:
             m = (int(i)**d) % n
